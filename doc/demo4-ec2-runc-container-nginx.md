@@ -491,7 +491,7 @@ sudo ip link set dev veth0 up
 
 ## コンテナ内でNginxを起動
 
-```json
+```bash
 / # nginx -v
 nginx version: nginx/1.26.2
 
@@ -500,7 +500,7 @@ nginx version: nginx/1.26.2
 
 この時点で、ホスト側からコンテナNginxへのアクセスが可能になる。
 
-```json
+```bash
 $ curl 192.168.10.1:80
 <h1>Hello World!</h1>
 <p>This is Nginx Demo System.</p>
@@ -508,7 +508,7 @@ $ curl 192.168.10.1:80
 
 ## インターネットから、コンテナにアクセス可能にする
 
-```json
+```bash
 $ sudo apt install net-tools
 
 # ip_forwardを有効にする
